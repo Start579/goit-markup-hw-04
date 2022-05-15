@@ -144,12 +144,43 @@ body {
 .contact-mail {
   margin-right: 50px;
 }
+.contact-mail::before {
+  content: "";
+  background-image: url(../images/envelope.svg);
+display: inline-block;
+width: 16px;
+height: 12px;
+margin-right: 10px;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  }
+.icon:hover,
+.icon:focus
+{
+  fill:currentColor
+}
+
+.contact-phone::before {
+  content: "";
+  background-image: url(../images/smartphone.svg);
+display: inline-block;
+width: 10px;
+height: 16px;
+margin-right: 10px;
+background-size: contain;
+background-repeat: no-repeat;
+}
 .contact-mail:hover,
 .contact-phone:focus,
 .contact-mail:focus,
 .contact-phone:hover,
 .contact-adress:hover,
-.contact-adress:focus {
+.contact-adress:focus
+{
   color: var(--accent-color);
 }
 .contact {
@@ -158,8 +189,15 @@ body {
 }
 
 /* =============/BODY-HERO/================ */
+.overlay {
+   background-image: url(../images/Img-hero.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
 .hero {
-  background-color: var(--accent-bacground-color);
+
+background-color: var(--accent-bacground-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
