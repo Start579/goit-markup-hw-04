@@ -141,38 +141,20 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.contact-mail {
+.contact-mail,
+.contact-phone {
   margin-right: 50px;
-}
-.contact-mail::before {
-  content: "";
-  background-image: url(../images/envelope.svg);
-display: inline-block;
-width: 16px;
-height: 12px;
-margin-right: 10px;
-background-size: contain;
-background-repeat: no-repeat;
-}
-.icon {
   display: flex;
   align-items: center;
-  }
-.icon:hover,
-.icon:focus
-{
-  fill:currentColor
+  fill: #757575;
 }
-
-.contact-phone::before {
-  content: "";
-  background-image: url(../images/smartphone.svg);
-display: inline-block;
-width: 10px;
-height: 16px;
-margin-right: 10px;
-background-size: contain;
-background-repeat: no-repeat;
+.icon {
+  margin-right: 10px;
+  
+ }
+ .contact-mail:hover,
+ .contact-phone:hover {
+  fill: var(--accent-color);
 }
 .contact-mail:hover,
 .contact-phone:focus,
