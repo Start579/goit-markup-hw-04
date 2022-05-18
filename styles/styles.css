@@ -47,7 +47,7 @@ img {
   margin: auto;
   /* outline: 2px solid #2196f3; */
   padding-left: 15px;
-  padding-right: 15px;-+
+  padding-right: 15px;
   
 }
 .section {
@@ -223,10 +223,26 @@ background-color: var(--accent-bacground-color);
 }
 .description-item {
   margin-top: 10px;
-  /* font-weight: normal; */
   line-height: 1.71;
   width: 270px;
 }
+.description-icon {
+display: block;
+margin: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 55px;
+}
+
+.menu-description,
+.menu-description-indent {
+  background-color: #F5F4FA;
+  display: block;
+  height: 120px; 
+  border-radius: 4px;
+}
+
+
 /* =============/EMPLOYMENT/================ */
 .employment {
   margin-bottom: 50px;
@@ -245,9 +261,9 @@ background-color: var(--accent-bacground-color);
 .employment-img-last {
   margin-right: 0;
 }
-.employment-ident {
+/* .employment-ident {
   padding-top: 0;
-}
+} */
 /* =============/EMPLOYEES/================ */
 .employees {
   background-color: var(--second-bacground-color);
@@ -279,6 +295,54 @@ background-color: var(--accent-bacground-color);
   line-height: 1.19;
   text-align: center;
 }
+.social-icon {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin: 25px;
+  }
+.social-icon-item {
+  border: none;
+  fill: #fff;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+.social-icon:hover {
+  fill: #ffffff
+ }
+ .social-icon-item:hover {
+fill: #2196f3; 
+}
+/* ==============/CLIENTS/================= */
+.clients {
+  margin-bottom: 50px;
+  font-weight: var(--accent-font-weight);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--accent-bacground-color);
+}
+.clients-icon {
+  /* display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 25px;
+  /* background-color: #AFB1B8;
+  display: block; */
+  /* height: 92px; 
+  border-radius: 4px; */
+  background-color: #F5F4FA;
+  display: block;
+  height: 120px; 
+  border-radius: 4px;
+}
+.clients-icon-item {
+  /* outline: 1px solid var(--accent-color); */
+border: #212121;
+border: ;
+}
 /* =============/PORTFOLIO/================ */
 .menu-btn {
   display: flex;
@@ -295,7 +359,7 @@ background-color: var(--accent-bacground-color);
   background-color: var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
-  border: transparent;
+
 }
 .portfolio-btn {
   padding: 6px 22px 6px 22px;
