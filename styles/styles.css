@@ -48,7 +48,6 @@ img {
   /* outline: 2px solid #2196f3; */
   padding-left: 15px;
   padding-right: 15px;
-  
 }
 .section {
   padding-top: 94px;
@@ -150,10 +149,9 @@ body {
 }
 .icon {
   margin-right: 10px;
-  
- }
- .contact-mail:hover,
- .contact-phone:hover {
+}
+.contact-mail:hover,
+.contact-phone:hover {
   fill: var(--accent-color);
 }
 .contact-mail:hover,
@@ -161,8 +159,7 @@ body {
 .contact-mail:focus,
 .contact-phone:hover,
 .contact-adress:hover,
-.contact-adress:focus
-{
+.contact-adress:focus {
   color: var(--accent-color);
 }
 .contact {
@@ -172,14 +169,13 @@ body {
 
 /* =============/BODY-HERO/================ */
 .overlay {
-   background-image: url(../images/Img-hero.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+  background-image: url(../images/Img-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero {
-
-background-color: var(--accent-bacground-color);
+  background-color: var(--accent-bacground-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -227,8 +223,8 @@ background-color: var(--accent-bacground-color);
   width: 270px;
 }
 .description-icon {
-display: block;
-margin: 25px;
+  display: block;
+  margin: 25px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 55px;
@@ -236,12 +232,11 @@ margin: 25px;
 
 .menu-description,
 .menu-description-indent {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   display: block;
-  height: 120px; 
+  height: 120px;
   border-radius: 4px;
 }
-
 
 /* =============/EMPLOYMENT/================ */
 .employment {
@@ -272,6 +267,9 @@ margin: 25px;
   background-color: var(--accent-color-white);
   margin-right: 30px;
 }
+.employees-card-last {
+  background-color: var(--accent-color-white);
+  }
 
 .employees-header {
   margin-bottom: 50px;
@@ -300,20 +298,19 @@ margin: 25px;
   justify-content: center;
   cursor: pointer;
   margin: 25px;
-  }
+}
 .social-icon-item {
   border: none;
-  fill: #fff;
+  fill: #ffffff;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-  
-  }
+}
 .social-icon:hover {
-  fill: #ffffff
- }
- .social-icon-item:hover {
-fill: #2196f3; 
+  fill: #ffffff;
+}
+.social-icon-item:hover {
+  fill: #2196f3;
 }
 /* ==============/CLIENTS/================= */
 .clients {
@@ -323,26 +320,28 @@ fill: #2196f3;
   line-height: 1.17;
   text-align: center;
   color: var(--accent-bacground-color);
+  display: block;
 }
 .clients-icon {
-  /* display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  margin: 25px;
-  /* background-color: #AFB1B8;
-  display: block; */
-  /* height: 92px; 
-  border-radius: 4px; */
-  background-color: #F5F4FA;
-  display: block;
-  height: 120px; 
-  border-radius: 4px;
+    display: flex;
 }
 .clients-icon-item {
-  /* outline: 1px solid var(--accent-color); */
-border: #212121;
-border: ;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  cursor: pointer;
+  margin-right: 30px;
+
 }
+.clients-icon-item-last {
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  cursor: pointer;
+}
+.clients-icon-item:hover,
+.clients-icon-item-last:hover {
+  border: 1px solid var(--accent-color);
+}
+
 /* =============/PORTFOLIO/================ */
 .menu-btn {
   display: flex;
@@ -359,7 +358,6 @@ border: ;
   background-color: var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
-
 }
 .portfolio-btn {
   padding: 6px 22px 6px 22px;
@@ -448,6 +446,7 @@ border: ;
   background-color: var(--accent-bacground-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 .link-logo {
   color: var(--accent-color-white);
@@ -455,3 +454,42 @@ border: ;
   font-size: 26px;
   font-family: raleway;
 }
+/* ============/FOOTER-ICON/=============== */
+.footer-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+.block-header {
+  font-family: var(--accent-font);
+  font-style: bold;
+  font-size: var(--accent-font-size);
+  line-height: var(--accent-line-height);
+  color: var(--accent-color-white);
+}
+.footer-icon {
+  cursor: pointer;
+  margin-top: 20px;
+}
+.footer-icon-item {
+  border: none;
+  fill: currentColor;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-icon:hover {
+  fill: #ffffff;
+}
+.footer-icon-item:hover {
+  fill: #2196f3;
+}
+  .adress-block,
+  .footer-block {
+    display: inline-block;
+  }
+  .footer-block {
+    margin-left: 70px;
+    
+  }
