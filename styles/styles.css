@@ -58,9 +58,9 @@ img {
 .header-line {
   display: flex;
 }
-.border {
-  border-top: 1px solid #ececec;
-}
+/* .border-line {
+  border-bottom: 1px solid #ececec;
+} */
 .link {
   text-decoration: none;
   margin: auto;
@@ -73,7 +73,6 @@ img {
 }
 body {
   font-family: var(--accent-font);
-  /* font-weight: var(--second-font-weight); */
   background-color: var(--accent-color-white);
   font-size: var(--accent-font-size);
   color: var(--accent-font-color);
@@ -308,23 +307,44 @@ body {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  margin: 16px;
-  fill-opacity: var(--accent-font-color);
-  /* fill: #AFB1B8; */
-}
-.social-icon-item {
+  margin: 16px; 
+  
+ }
+ .social-icon-fill {
+  display: block;
+  /* width: 20px;
+  height: 20px; */
   border: none;
-  fill: transparent;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 10;
+
+ }
+.social-icon-item {  
+  background-color: #d0d4e4;
+  fill: #AFB1B8;
+  /* display: block; */
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  display: flex;
+justify-content: center;
+align-items: center;
+  /* padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-top: 12px; */
+  /* padding: 12px; */
+ border: none;
 }
-.social-icon:hover {
-  fill: transparent;
-}
-.social-icon-item:hover {
-  fill: var(--accent-color);
-}
+
+.social-icon-item:hover { 
+  background-color: #2196f3;
+  fill: #ffffff;
+  border: none;
+   /* border-radius: 50%;
+   
+   display: block;
+    padding: 12px; */
+ }
 /* ==============/CLIENTS/================= */
 .clients {
   margin-bottom: 50px;
@@ -334,9 +354,10 @@ body {
   text-align: center;
   color: var(--accent-bacground-color);
   display: block;
-}
+ }
 .clients-icon {
     display: flex;
+  
 }
 .clients-icon-item {
   border-radius: 4px;
@@ -344,6 +365,10 @@ body {
   cursor: pointer;
   margin-right: 30px;
   fill: #AFB1B8;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .clients-icon-item-last {
   border-radius: 4px;
@@ -373,6 +398,10 @@ body {
   background-color: var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
+  border: none;
+}
+.portfolio-btn-all:hover {
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-btn {
   padding: 6px 22px 6px 22px;
@@ -424,6 +453,9 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
+.filter-img:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* ==========/FOOTER-CONTACTS/============= */
 .contact-mail-footer,
 .contact-phone-footer {
@@ -461,7 +493,16 @@ body {
   background-color: var(--accent-bacground-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  /* display: flex; */
+}
+.container-footer {
+  width: 1200px;
+  margin: auto;
+  /* outline: 2px solid #2196f3; */
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
+  align-items: baseline;
 }
 .link-logo {
   color: var(--accent-color-white);
@@ -474,7 +515,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
 }
 .block-header {
   font-family: var(--accent-font);
@@ -489,7 +529,7 @@ body {
 }
 .footer-icon-item {
   border: none;
-  fill: currentColor;
+  fill: #AFB1B8;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
