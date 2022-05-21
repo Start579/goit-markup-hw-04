@@ -57,10 +57,8 @@ img {
 /* ===============/HEADER/=============== */
 .header-line {
   display: flex;
-}
-/* .border-line {
   border-bottom: 1px solid #ececec;
-} */
+}
 .link {
   text-decoration: none;
   margin: auto;
@@ -167,16 +165,18 @@ body {
 }
 /* =============/BODY-HERO/================ */
 .overlay {
-  background-image: url(../images/Img-hero.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img-hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-width: 1600px;
   margin: 0 auto;
-  fill: #2f303a;
 }
 .hero {
-  background-color: var(--accent-bacground-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -279,15 +279,14 @@ body {
 }
 
 .employees-command {
-  margin-top: 30px;
   font-size: var(--secondary-font-size);
   line-height: 1.19;
   text-align: center;
   color: var(--accent-bacground-color);
 }
 .command-profession {
-  margin-bottom: 30px;
-  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-top: 10px;
   line-height: 1.19;
   text-align: center;
 }
@@ -301,7 +300,6 @@ body {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  margin: 16px;
 }
 .social-icon-item {
   background-color: transparent;
