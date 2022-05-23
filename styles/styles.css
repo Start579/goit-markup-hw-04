@@ -59,8 +59,8 @@ img {
   display: flex;
 }
 .header-line {
-    border-bottom: 1px solid #ececec;
- }
+  border-bottom: 1px solid #ececec;
+}
 .link {
   text-decoration: none;
   margin: auto;
