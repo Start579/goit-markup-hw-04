@@ -55,10 +55,12 @@ img {
   padding-bottom: 94px;
 }
 /* ===============/HEADER/=============== */
-.header-line {
+.nav-container {
   display: flex;
-  border-bottom: 1px solid #ececec;
 }
+.header-line {
+    border-bottom: 1px solid #ececec;
+ }
 .link {
   text-decoration: none;
   margin: auto;
@@ -173,7 +175,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 .hero {
@@ -311,9 +313,21 @@ body {
   justify-content: center;
   align-items: center;
   border: none;
+  margin-right: 10px;
 }
-
-.social-icon-item:hover {
+.social-icon-item-last {
+  background-color: transparent;
+  fill: #afb1b8;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.social-icon-item:hover,
+.social-icon-item-last:hover {
   background-color: #2196f3;
   fill: #ffffff;
   border: none;
@@ -430,7 +444,7 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
-.filter-img:hover {
+.cards-hover:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -487,11 +501,6 @@ body {
   font-family: raleway;
 }
 /* ============/FOOTER-ICON/=============== */
-.footer-block {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
 .block-header {
   font-family: var(--accent-font);
   font-style: bold;
@@ -509,7 +518,19 @@ body {
 }
 .footer-icon-item {
   background-color: rgba(255, 255, 255, 0.1);
-  fill: #afb1b8;
+  fill: #ffffff;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-right: 10px;
+}
+.footer-icon-item-last {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
   border-radius: 50%;
   height: 44px;
   width: 44px;
@@ -518,11 +539,13 @@ body {
   align-items: center;
   border: none;
 }
-.footer-icon-item:hover {
+.footer-icon-item:hover,
+.footer-icon-item-last:hover {
   background-color: #2196f3;
   fill: #ffffff;
   border: none;
 }
 .footer-block {
-  margin-left: 70px;
+  display: flex;
+  align-items: baseline;
 }
