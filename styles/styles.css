@@ -209,36 +209,36 @@ body {
 }
 /* ============/DESCRIPTION/=============== */
 .menu-description {
-  margin-right: 30px;
+  margin-right: 30px;  
+  margin: 25px;
+  }
+.menu-description-item {
+background-color: #f5f4fa;
+width: 270px;
+height: 120px;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .menu-description-indent {
   margin-right: 0;
+  margin: 25px;
+}
+.description-icon {
+   display: flex;
 }
 .description {
   font-size: 14px;
   line-height: var(--accent-line-height);
   text-transform: uppercase;
   color: var(--accent-bacground-color);
+  margin-top: 30px;
 }
 .description-item {
   margin-top: 10px;
   line-height: 1.71;
-  width: 270px;
-}
-.description-icon {
-  display: block;
-  margin: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 55px;
-}
-.menu-description,
-.menu-description-indent {
-  background-color: #f5f4fa;
-  display: block;
-  height: 120px;
-  border-radius: 4px;
-}
+ }
 /* =============/EMPLOYMENT/================ */
 .employment {
   margin-bottom: 50px;
@@ -501,20 +501,22 @@ body {
   font-family: raleway;
 }
 /* ============/FOOTER-ICON/=============== */
+.join {
+  margin-left: 70px;
+}
 .block-header {
   font-family: var(--accent-font);
   font-style: bold;
   font-size: var(--accent-font-size);
   line-height: var(--accent-line-height);
   color: var(--accent-color-white);
-  margin-left: 70px;
+  text-transform: uppercase;
 }
 .footer-icon {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  margin-top: 16px;
-  margin-left: 70px;
+  margin-top: 20px;
 }
 .footer-icon-item {
   background-color: rgba(255, 255, 255, 0.1);
