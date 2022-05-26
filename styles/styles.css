@@ -259,6 +259,12 @@ body {
 .employment-ident {
   padding-top: 0;
 }
+.employment-link {
+  position: absolute;
+}
+.employment-thumb {
+  position: relative;
+}
 /* =============/EMPLOYEES/================ */
 .employees {
   background-color: var(--second-bacground-color);
@@ -360,7 +366,9 @@ body {
   cursor: pointer;
   margin-right: 30px;
   fill: #afb1b8;
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .clients-icon-item-last {
   display: flex;
@@ -370,7 +378,9 @@ body {
   border: 1px solid #afb1b8;
   cursor: pointer;
   fill: #afb1b8;
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .clients-icon-item:hover,
 .clients-icon-item-last:hover {
