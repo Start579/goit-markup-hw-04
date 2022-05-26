@@ -210,7 +210,7 @@ body {
 /* ============/DESCRIPTION/=============== */
 .menu-description {
   margin-right: 30px;  
-  margin: 25px;
+  /* margin: 25px; */
   }
 .menu-description-item {
 background-color: #f5f4fa;
@@ -223,7 +223,7 @@ justify-content: center;
 }
 .menu-description-indent {
   margin-right: 0;
-  margin: 25px;
+ 
 }
 .description-icon {
    display: flex;
@@ -257,6 +257,9 @@ justify-content: center;
 .employment-img-last {
   margin-right: 0;
 }
+.employment-ident {
+  padding-top: 0;
+}
 /* =============/EMPLOYEES/================ */
 .employees {
   background-color: var(--second-bacground-color);
@@ -265,6 +268,7 @@ justify-content: center;
   background-color: var(--accent-color-white);
   margin-right: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 .employees-card-last {
   background-color: var(--accent-color-white);
@@ -344,27 +348,29 @@ justify-content: center;
 }
 .clients-icon {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .clients-icon-item {
+  display: flex;
+width: 170px;
+height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
   cursor: pointer;
   margin-right: 30px;
   fill: #afb1b8;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 32px 16px 32px;
 }
 .clients-icon-item-last {
+  display: flex;
+  width: 170px;
+  height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
   cursor: pointer;
   fill: #afb1b8;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 32px;
 }
 .clients-icon-item:hover,
 .clients-icon-item-last:hover {
@@ -443,8 +449,13 @@ justify-content: center;
 .filter-img {
   margin-left: 30px;
   margin-top: 30px;
+  color: currentColor;
 }
-.cards-hover:hover {
+.cards-hover {
+  display: block;
+}
+.cards-hover:hover,
+.cards-hover:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -506,7 +517,7 @@ justify-content: center;
 }
 .block-header {
   font-family: var(--accent-font);
-  font-style: bold;
+ font-weight: 700;
   font-size: var(--accent-font-size);
   line-height: var(--accent-line-height);
   color: var(--accent-color-white);
